@@ -13,8 +13,8 @@ config wifi-iface
 	option network	wifi
 	option mode     <wifi_mode>
 	option ssid     "<wifi_ssid>-<wifi_chanbw>-v3"
-	option encryption "<wifi_encryption>"
-	option key      "<wifi_key>"
+	option encryption '<wifi_encryption>'
+	option key	'<wifi_key>'
 
 config wifi-iface
         option device  <radio> 

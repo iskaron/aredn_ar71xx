@@ -682,6 +682,8 @@ print "-$wifi_chanbw-v3</td></tr>\n";
 print "<tr><td>Key</td>\n";
 print "<td><input type=password size=15 name=wifi_key value='$wifi_key'></td></tr>";
 
+push @hidden, "<input type=hidden name=wifi_encryption value='$wifi_encryption'>";
+
 push @hidden, "<input type=hidden name=wifi_mode value='$wifi_mode'>";
 
 print "<tr><td>Channel</td>\n";
