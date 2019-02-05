@@ -187,7 +187,7 @@ $page = <<EOF;
   </div>
   <center>
     <div class="TopBanner">
-      <div class="LogoDiv"><img src="/AREDN.png" class="AREDNLogo"></img></div>
+      <div class="LogoDiv"><img src="/asb-logo.svg" class="AREDNLogo"></img></div>
     </div>
     <h1><big>$node</big></h1><hr>
     <nobr>

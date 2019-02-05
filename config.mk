@@ -1,7 +1,7 @@
 # default parameters for Makefile
 
 # What version will show in the AREDN firmware 'Node Status" UI page?
-PRIVATE_BUILD_VERSION=3.18.9.0
+PRIVATE_BUILD_VERSION=3.18.9.0-asb
 
 # build options:  -j# for (# of cores +1) on build machine,  V=s for verbose output
 # https://wiki.openwrt.org/doc/howto/build#make_options  (archive)
@@ -12,7 +12,7 @@ MAKE_ARGS=-j3
 # Where will the installed image find add-on Packages to download?
 # This URL must contain the packages from this build
 # downloading packages within the AREDN UI uses signatures 
-PRIVATE_BUILD_PACKAGES=http://downloads.arednmesh.org/releases/3/18/3.18.9.0
+PRIVATE_BUILD_PACKAGES=https://do1olm.de/aredn/3.18.9.0-asb/ar71xx_generic/packages
 
 # These options are for more complex changes
 SHELL:=$(shell which bash)

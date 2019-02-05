@@ -78,6 +78,8 @@ local fw_mfg="AREDN"
 if not file_exists("/www/AREDN.png") then
 	fw_mfg = "Other"
 end
+fw_mfg = "ASB-H"
+
 info['node_details']['firmware_mfg']=fw_mfg
 
 -- Firmware version

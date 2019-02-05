@@ -291,6 +291,10 @@ if($parms{button_save})
     }
 
     push (@errors, "invalid Mesh RF SSID") unless length $wifi_ssid <= 27;
+    
+    push (@errors, "invalid pre-shared-key") unless !$wifi_key || length $wifi_key >= 8;
+
+    $wifi_encryption = $wifi_key ? "psk2+aes" : "none";
 
     if ( is_channel_valid($wifi_channel) != 1 )
     {
@@ -674,6 +678,9 @@ if ( -f "/etc/config/unconfigured" || $parms{button_reset} ) {
 print "<tr><td>SSID</td>\n";
 print "<td><input type=text size=15 name=wifi_ssid value='$wifi_ssid'>";
 print "-$wifi_chanbw-v3</td></tr>\n";
+
+print "<tr><td>Key</td>\n";
+print "<td><input type=password size=15 name=wifi_key value='$wifi_key'></td></tr>";
 
 push @hidden, "<input type=hidden name=wifi_mode value='$wifi_mode'>";
 

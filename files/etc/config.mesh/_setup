@@ -1,13 +1,15 @@
 wifi_proto = static
 wifi_ip = 10.<MAC2>
 wifi_mask = 255.0.0.0
-wifi_ssid = AREDN
+wifi_ssid = ASB-H
 wifi_mode = adhoc
 wifi_txpower = 19
 wifi_channel = 1
 wifi_chanbw = 20
 wifi_distance = 0
 wifi_country = 00
+wifi_encryption = psk2+aes
+wifi_key = 12345678
 
 dmz_mode = 3
 lan_proto = static
