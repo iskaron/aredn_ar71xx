@@ -7,7 +7,7 @@ wifi_txpower = 19
 wifi_channel = 1
 wifi_chanbw = 20
 wifi_distance = 0
-wifi_country = 00
+wifi_country = DE
 wifi_encryption = psk2+aes
 wifi_key = 12345678
 

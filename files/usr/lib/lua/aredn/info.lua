@@ -107,6 +107,18 @@ function getSSID()
 	return myssid
 end
 
+function getMeshEncryption()
+	-- Encryption
+	local myenc="none"
+	local wif=getUciConfType("wireless", "wifi-iface")
+	for pos, t in pairs(wif) do
+		if wif[pos]['network']=="wifi" then
+			myenc=wif[pos]['encryption']
+		end
+	end
+	return myenc
+end
+
 function getMeshRadioDevice()
 	--Determine radio device for mesh
 	local radio=""

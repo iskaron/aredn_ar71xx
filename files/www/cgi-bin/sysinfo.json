@@ -74,7 +74,7 @@ info['node_details']['description']=getNodeDescription()
 info['node_details']['board_id']=hardware_boardid()
 
 -- Firmware Manufacturer
-local fw_mfg="AREDN"
+local fw_mfg="ASB-H"
 
 info['node_details']['firmware_mfg']=fw_mfg
 
@@ -87,6 +87,7 @@ info["meshrf"]["ssid"]=getSSID()
 local radio=getMeshRadioDevice()
 info["meshrf"]["channel"]=getChannel(radio)
 info["meshrf"]['chanbw']=getChannelBW(radio)
+info["meshrf"]['encryption']=getMeshEncryption()
 
 -- Tunnel info
 info['tunnels']={}
