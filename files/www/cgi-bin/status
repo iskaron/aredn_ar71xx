@@ -100,8 +100,8 @@ alert_banner();
 print "<h1><big>$node";
 print " / $tactical" if $tactical;
 print "</big></h1>";
-print "<center>$lat_lon</center>"; #display location info
-print "<table id='node_description_display'><tr><td>$node_desc</td></tr></table>" if $node_desc;
+#print "<center>$lat_lon</center>"; #display location info
+#print "<table id='node_description_display'><tr><td>$node_desc</td></tr></table>" if $node_desc;
 print "<hr>\n";
 
 # nav buttons
@@ -124,11 +124,11 @@ if($config eq "mesh")
 print "&nbsp;&nbsp;&nbsp;";
 print "<button type=button onClick='window.location=\"setup\"' title='Configure this node'>Setup</button>\n";
 
-print "&nbsp;&nbsp;&nbsp;";
+#print "&nbsp;&nbsp;&nbsp;";
 
-print "<select name=\"css\" size=\"1\" onChange=\"form.submit()\" >";
-css_options();
-print "</select>";
+#print "<select name=\"css\" size=\"1\" onChange=\"form.submit()\" >";
+#css_options();
+#print "</select>";
 
 print "</nobr>";
 

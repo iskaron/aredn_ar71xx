@@ -1609,6 +1609,8 @@ sub alert_banner
   #AREDN Banner
   print "<div class=\"LogoDiv\"><a href=\"http://localnode.local.mesh:8080\" title=\"Go to localnode\"><img src=\"/asb-logo.svg\" class=\"AREDNLogo\"></img></a></div>";
 
+  print "<div class=\"ASBText\">Arbeiter-Samariter-Bund<br>Ortsverband Hannover-Stadt<br>Fernmeldegruppe<br>Sanit&auml;tsdienstinfrastruktur</div>";
+
   # Device compatibility alert
   if ( is_hardware_supported() != 1  ){
     if (is_hardware_supported() == 0 ){
@@ -1631,7 +1633,7 @@ sub page_footer
   print "<div class=\"Page_Footer\">";
   print "<hr>";
 
-  print "<p class=\"PartOfAREDN\">Part of the AREDN&trade; Project. For more details please <a href=\"/about.html\" target=\"_blank\">see here</a></p>";
+  print "<p class=\"PartOfAREDN\">Based on the AREDN&trade; Project. For more details please <a href=\"/about.html\" target=\"_blank\">see here</a></p>";
 
   # Page_Footer
   print "</div>"

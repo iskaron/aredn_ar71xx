@@ -70,7 +70,7 @@ print "</head>\n";
 print "<body><form method=post action=/cgi-bin/scan enctype='multipart/form-data'>\n";
 print "<center>\n";
 alert_banner();
-print "<h1>$node WiFi scan</h1><hr>\n";
+print "<h1><big>$node WiFi scan</big></h1><hr>\n";
 
 if(-f "/tmp/web/autoscan")
 {

@@ -17,3 +17,5 @@ PRIVATE_BUILD_PACKAGES=https://do1olm.de/aredn/3.18.9.0-asb/ar71xx_generic/packa
 # These options are for more complex changes
 SHELL:=$(shell which bash)
 TARGET=ar71xx-generic
+#TARGET=x86-generic
+

@@ -296,6 +296,8 @@ if($parms{button_save})
 
     $wifi_encryption = $wifi_key ? "psk2+aes" : "none";
 
+    $wifi_country = $wifi_key ? "DE" : "HX";
+
     if ( is_channel_valid($wifi_channel) != 1 )
     {
         push (@errors, "invalid Mesh RF channel")
@@ -639,8 +641,8 @@ if(0)# disable for now
 print "
 </tr>
 <tr>
-<td>Node Description (optional)</td>
-<td><textarea rows='2' cols='60' wrap='soft' maxlength='210' id='node_description_entry' name='description_node' tabindex='4'>$desc</textarea></td>";
+<td></td>
+<td></td>";
 push @hidden, "<input type=hidden name=config value='mesh'>";
 print "
 <td>Verify Password</td>
@@ -677,7 +679,7 @@ if ( -f "/etc/config/unconfigured" || $parms{button_reset} ) {
 
 print "<tr><td>SSID</td>\n";
 print "<td><input type=text size=15 name=wifi_ssid value='$wifi_ssid'>";
-print "-$wifi_chanbw-v3</td></tr>\n";
+#print "-$wifi_chanbw-v3</td></tr>\n";
 
 print "<tr><td>Key</td>\n";
 print "<td><input type=password size=15 name=wifi_key value='$wifi_key'></td></tr>";
@@ -702,7 +704,7 @@ selopt("10 MHz","10",$wifi_chanbw);
 selopt("5 MHz","5",$wifi_chanbw);
 print "</select></td></tr>\n";
 
-push (@hidden, "<input type=hidden name=wifi_country value='HX'>");
+push (@hidden, "<input type=hidden name=wifi_country value='$wifi_country'>");
 
 print "<tr><td colspan=2 align=center><hr><small>Active Settings</small></td></tr>\n";
 
